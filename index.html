@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBIKE | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sticky">
+        <header>
+            <a href="#"><img src="assets/logo.png" alt="YBIKE Logo"></a>
+            <h1>YBIKE</h1>
+        </header>
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>
+                        <h2 class="active-page">Home</h2>
+                    </li>
+                </a>
+                <li>
+                    <h2>Products</h2>
+                    <ul>
+                        <a href="product-vixian.html">
+                            <li>
+                                <h2>Vixian</h2>
+                            </li>
+                        </a>
+                        <a href="product-kawasako.html">
+                            <li>
+                                <h2>Kawasako</h2>
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="gallery.html">
+                    <li>
+                        <h2>Gallery</h2>
+                    </li>
+                </a>
+                <a href="reserve.html">
+                    <li>
+                        <h2>Reserve</h2>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="about-us">
+            <h2>About YBIKE</h2>
+            <div class="about-us-description">
+                <img src="assets/logo.png" alt="YBIKE Logo">
+                <p> &ensp; YBIKE is a sport motorcycle dealer shop which provide users the best quality bike for both sport and style. With our best service and quality control, We hope you can enjoy buying and rinding the bike powered by us.</p>
+            </div>
+            <h2 class="right">YBIKE. Your Bike, Your Style.</h2>
+        </div>
+        <div class="latest-news-container">
+            <div class="image-slider">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="assets/slider1.png" alt="slider1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/gallery8.jpg" alt="slider2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/slider3.png" alt="slider3">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+                <div class="slider-dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script src="image-slider.js"></script>
+            <div class="latest-news">
+                <h2>Latest News from YBIKE</h2>
+                <div class="news">
+                    <h3>10th YBIKE opens in BSD City!</h3>
+                    <h3>18 May 2021 | Admin</h3>
+                    <p>After a long time, your one-stop destination for style bike is already near your house.</p>
+                </div>
+                <div class="news">
+                    <h3>Indonesian Sportmotor Expo(ISE) 2021</h3>
+                    <h3>15 May 2021 | Admin</h3>
+                    <p>Don’t miss it, join our expo in JIEXPO, Kemayoran, Jakarta.</p>
+                </div>
+                <div class="news">
+                    <h3>OVO x YBIKE: 15% Discount!</h3>
+                    <h3>13 May 2021 | Admin</h3>
+                    <p>With your e-wallet, get your style bike with cheaper price!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Copyright &copy; 2021 YBIKE</h2>
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <a href="">
+                    <img src="assets/facebook.png" alt="facobook">
+                </a>
+                <a href="">
+                    <img src="assets/instagram.png" alt="instagram">
+                </a>
+                <a href="">
+                    <img src="assets/twitter.png" alt="twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

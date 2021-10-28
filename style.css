@@ -1,0 +1,1002 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3,
+p {
+    font-size: 16px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+header {
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+header img {
+    width: 120px;
+    margin: 0px 20px;
+}
+
+nav {
+    background-color: #383838;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    color: white;
+    width: 600px;
+}
+
+nav li {
+    text-align: center;
+    width: 150px;
+}
+
+nav li h2 {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.active-page,
+nav li:hover {
+    background-color: #1c1f89;
+}
+
+nav li:active {
+    background-color: #688d03;
+}
+
+nav ul li ul {
+    width: 150px;
+    background-color: #383838;
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+main {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.about-us-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-description img {
+    width: 120px;
+}
+
+.right {
+    text-align: right;
+}
+
+.latest-news-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.image-slider {
+    width: 50%;
+}
+
+.slider {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.next {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    margin-top: -25px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #9a9a9a80;
+}
+
+.slider-dot {
+    text-align: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active-dot,
+.dot:hover {
+    background-color: #9a9a9a;
+}
+
+.latest-news {
+    width: 45%;
+}
+
+footer {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-us {
+    display: block;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.contact img {
+    width: 35px;
+}
+
+.expo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.expo h2 {
+    margin: 20px auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+}
+
+.headerBrand {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headerBrand p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: large;
+}
+
+
+/* 
+    KAWASAKO TRIMERA BOX
+*/
+
+.trimera {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-color: #0c3111;
+    padding: 35px 25px 25px 25px;
+    margin-top: 35px;
+    border-radius: 20px;
+}
+
+.trimera_intro {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.trimera_intro h1 {
+    font-size: 75px;
+    font-family: Consolas, Verdana, sans-serif;
+    text-align: center;
+}
+
+.trimeraBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.trimeraBoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.trimera_intro_slogan {
+    font-size: 35px;
+    font-family: Consolas, Verdana, sans-serif;
+}
+
+.trimeraPicColumn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trimeraPicColumn img {
+    width: 95%;
+    margin-left: 50px;
+}
+
+.bottomShowcase {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+/* 
+    KAWASAKO MAXIMA BOX
+*/
+
+.maxima {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-color: #16070d;
+    margin-top: 50px;
+    padding: 35px 25px 25px 25px;
+    border-radius: 20px;
+}
+
+.maxima_intro {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.maxima_intro h1 {
+    font-size: 70px;
+    font-family: "Eras Bold ITC", Verdana, sans-serif;
+    text-align: center;
+}
+
+.maximaBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.maximaBoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.maxima_intro_slogan {
+    font-size: 25px;
+    font-family: "Arial Black", Verdana, sans-serif;
+}
+
+.maximaPicColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maximaPicColumn img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.buyNow {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(202, 7, 7);
+    border-radius: 5px;
+    margin: 15px 0px 15px 0px;
+    padding-top: 10px;
+}
+
+.buyNow p {
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.buyNow a {
+    text-decoration: none;
+}
+
+.buyNow:hover {
+    background-color: #1f45ec80;
+}
+
+.buyNow:active {
+    background-color: #1fecae80;
+}
+
+
+/* 
+    KAWASAKO POWERA250 BOX
+*/
+
+.Powera350 {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-color: #61430c;
+    margin-top: 50px;
+    padding: 35px 25px 25px 25px;
+    border-radius: 20px;
+}
+
+.Powera350_intro {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.Powera350_intro h1 {
+    font-size: 75px;
+    font-family: "Franklin Gothic Heavy", Verdana, sans-serif;
+    text-align: center;
+}
+
+.Powera350Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.Powera350BoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.Powera350_intro_slogan {
+    font-size: 30px;
+    font-stretch: expanded;
+    font-family: Impact, Verdana, sans-serif;
+}
+
+.Powera350PicColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Powera350PicColumn img {
+    width: 90%;
+    margin-top: 50px;
+}
+
+
+/* 
+    VIXIAN RX4 BOX
+*/
+
+.RX4 {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-color: #0e153f;
+    padding: 35px 25px 25px 25px;
+    margin-top: 35px;
+    border-radius: 20px;
+}
+
+.RX4_intro {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.RX4_intro h1 {
+    font-size: 75px;
+    font-family: "Tw Cen MS", Verdana, sans-serif;
+    text-align: center;
+}
+
+.RX4Box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.RX4BoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.RX4_intro_slogan {
+    font-size: 35px;
+    font-family: Consolas, Verdana, sans-serif;
+}
+
+.RX4PicColumn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.RX4PicColumn img {
+    width: 90%;
+    margin-left: 50px;
+}
+
+
+/* 
+    VIXION RXLITE BOX
+*/
+
+.RXlite {
+    display: flex;
+    flex-direction: column;
+    color: #291010;
+    background-color: #ffdb98;
+    margin-top: 50px;
+    padding: 35px 25px 25px 25px;
+    border-radius: 20px;
+}
+
+.RXlite_intro {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.RXlite_intro h1 {
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.RXliteBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.RXliteBoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.RXlite_intro_slogan {
+    font-size: 23px;
+    font-stretch: expanded;
+    font-family: "Lucida Sans", Verdana, sans-serif;
+}
+
+.RXlitePicColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RXlitePicColumn img {
+    width: 105%;
+    margin-top: 50px;
+}
+
+
+/* 
+    VIXIAN RISE BOX
+*/
+
+.RISE {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #1d7396;
+    margin-top: 50px;
+    padding: 35px 25px 25px 25px;
+    border-radius: 20px;
+}
+
+.RISE_intro {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.RISE_intro h1 {
+    font-size: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Verdana, sans-serif;
+    text-align: center;
+}
+
+.RISEBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.RISEBoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.RISE_intro_slogan {
+    font-size: 30px;
+    font-stretch: expanded;
+    font-family: impact, Verdana, sans-serif;
+}
+
+.RISEPicColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RISEPicColumn img {
+    width: 105%;
+    margin-top: 50px;
+}
+
+.OVOPromo {
+    color: rgb(216, 102, 245);
+}
+
+
+/* reserve form */
+
+.reserveForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #000000;
+    background-color: #0051ffb0;
+    padding: 35px 25px 25px 25px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.headerText {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sectionIntro {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.reserveInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 35px;
+}
+
+input,
+textarea {
+    width: 350px;
+    resize: none;
+}
+
+.addPerks input {
+    width: 25px;
+}
+
+.comments textarea {
+    width: 500px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.address textarea {
+    resize: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.DoB {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.DoB input {
+    width: 80px;
+}
+
+.gender input {
+    width: 15px;
+}
+
+.preferredPayment input {
+    width: 15px;
+}
+
+.processStep {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 35px;
+    padding: 10px 10px 0px 10px;
+}
+
+.addInfo {
+    margin-top: 35px;
+    gap: 30px;
+}
+
+.asterisk p {
+    color: rgb(110, 7, 7);
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.errorMsg {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.errorMsg textarea {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    resize: none;
+    padding: 10px;
+}
+
+#errorMonth,
+#errorDay,
+#errorPhone,
+#errorMinusQty,
+#errorZeroQty,
+#errorAddress {
+    color: #FFFFFF;
+    background-color: rgb(255, 49, 49);
+    display: none;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .sticky {
+        position: relative;
+    }
+    header {
+        background-color: #ebebeb;
+        display: block;
+        text-align: center;
+        height: 200px;
+    }
+    nav ul {
+        display: block;
+        width: 100%;
+    }
+    nav li {
+        text-align: center;
+        width: 100%;
+    }
+    nav li h2 {
+        width: 100%;
+    }
+    nav ul li ul {
+        width: 100%;
+        background-color: #323232;
+        position: relative;
+    }
+    .about-us {
+        text-align: center;
+    }
+    .about-us h2 {
+        margin: 20px auto;
+        text-align: center;
+    }
+    .right {
+        text-align: center;
+    }
+    .about-us {
+        width: 400px;
+        margin: auto;
+    }
+    .about-us-description {
+        text-align: left;
+    }
+    .latest-news-container {
+        display: block;
+    }
+    .image-slider {
+        width: 400px;
+        margin: auto;
+    }
+    .slide img {
+        width: 100%;
+    }
+    .latest-news {
+        width: 400px;
+        margin: auto;
+    }
+    .latest-news h2 {
+        margin: 20px auto;
+        text-align: center;
+    }
+    footer {
+        display: block;
+        padding: 20px;
+    }
+    footer h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contact {
+        margin: auto;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .bottomShowcase {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* Kawasako page */
+    .trimera {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .trimera_intro h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .trimeraBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        margin-left: 0px;
+    }
+    .trimeraPicColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0px;
+    }
+    .trimeraPicColumn img {
+        margin: auto;
+    }
+    .maxima {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .maxima_intro h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+    .maximaBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .maximaPicColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .maximaPicColumn img {
+        scale: 100%;
+    }
+    .Powera350 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .Powera350_intro h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+    .Powera350Box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .Powera350PicColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    /* Vixian page */
+    .RX4_intro h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+    .RX4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .RX4Box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        margin-left: 0px;
+    }
+    .RX4PicColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0px;
+    }
+    .RX4PicColumn img {
+        margin: auto;
+    }
+    .RXlite {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .RXliteBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .RXlitePicColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .RXlitePicColumn img {
+        scale: 95%;
+    }
+    .RXlite_intro h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+    .RISE {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .RISE_intro h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+    .RISEBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .RISEPicColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    /* Reserve form page */
+    form {
+        width: 100%;
+    }
+    input,
+    textarea {
+        width: 250px;
+    }
+    .comments textarea {
+        width: 350px;
+    }
+    .errorMsg {
+        flex-direction: column;
+    }
+    .buyNow {
+        margin: auto;
+    }
+}

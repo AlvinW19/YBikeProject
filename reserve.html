@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBIKE | Reserve Your Bike Now!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <div class="sticky">
+        <header>
+            <a href="index.html"><img src="assets/logo.png" alt="YBIKE Logo"></a>
+            <h1>YBIKE</h1>
+        </header>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>
+                        <h2>Home</h2>
+                    </li>
+                </a>
+                <li>
+                    <h2>Products</h2>
+                    <ul>
+                        <a href="product-vixian.html">
+                            <li>
+                                <h2>Vixian</h2>
+                            </li>
+                        </a>
+                        <a href="product-kawasako.html">
+                            <li>
+                                <h2>Kawasako</h2>
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="gallery.html">
+                    <li>
+                        <h2>Gallery</h2>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <h2  class="active-page">Reserve</h2>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <div class="reserveForm">
+            <div class="headerText">
+                <h1>Reserve your motorcycle now!</h1>
+                <br>
+                <h2>Stock is limited, so decide and reserve fast!</h2>
+            </div>
+
+            <form action="" method="GET" onsubmit="return reserveFormSubmit(this)">
+                <div class="reserveInfo">
+                        <p class="sectionIntro"><i>I. Reserve information:</i></p>
+                        <div class="productSelect">
+                            <b>Product selected:*</b>
+                            <select name="bikeProduct" id="product" required>
+                                <option value="" hidden>Select your wanted product here...</option>
+                                <option value="trimera">Kawasako TRIMERA</option>
+                                <option value="maxima">Kawasako Maxima</option>
+                                <option value="powera350">Kawasako Powera350</option>
+                                <option value="rx4">Vixian RX4</option>
+                                <option value="rxlite">Vixian RXlite</option>
+                                <option value="rise">Vixian RISE</option>
+                            </select>
+                        </div>
+
+                        <div class="color">
+                            <b>Color selected:*</b>
+                            <select name="bikeColor" id="color" required>
+                                <option value="" hidden>Select your preferred color...</option>
+                                <option value="silver">Silver</option>
+                                <option value="black">Black</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="red">Red</option>
+                                <option value="gold">Gold</option>
+                                <option value="skyblue">Sky Blue</option>
+                                <option value="choco">Chocolate</option>
+                                <option value="orange"">Orange</option>
+                                <option value="lime">Lime</option>
+                            </select>
+                        </div>
+
+                        <div class="quantity">
+                            <b>Quantity reserved:*</b>
+                            <input type="number" name="quantity" id="qty" placeholder="Input amount of quantity here..." required>
+                        </div>
+
+                        <b>Optional perks:</b>
+                        <div class="addPerks">
+                            <input type="checkbox" name="addPerks" id="extraGuarantee" value="extraGuarantee">Add extra guarantee for 2 years (Rp1.299.000)
+                            <br>
+                            <input type="checkbox" name="addPerks" id="antiCarat" value="antiCarat">Anti-carat protection by our partner, Duff-Clean (Rp 1.399.000)
+                            <br>
+                            <input type="checkbox" name="addPerks" id="memberCard" value="memberCard">Create your own exclusive YBIKE membership card (Rp 699.000)
+                        </div>
+
+                        <b>Additional comments to YBIKE (shipping, requests, etc.):</b>
+                        <div class="comments">
+                            <textarea name="comments" id="comments" placeholder="Input your comments or requests here"></textarea>
+                        </div>
+                </div>
+
+                <div class="personalInfo">
+                    <p class="sectionIntro"><i>II. Personal information:</i></p>
+                    <div class="fname">
+                        <b>First name:*</b>
+                        <input type="text" name="firstName" id="firstName" placeholder="Input your first name here" required>
+                    </div>
+
+                    <div class="lname">
+                        <b>Last name:</b>
+                        <input type="text" name="lastName" id="lastName" placeholder="Input your last name here">
+                    </div>
+
+                    <div class="email">
+                        <b>Email:*</b>
+                        <input type="email" name="emailAddress" id="emailAddress" placeholder="Input your email address here" required>
+                    </div>
+
+                    <div class="address">
+                        <div class="addressTag">
+                            <b>Address:*</b>
+                        </div>
+
+                        <div class="addressBox">
+                            <textarea name="address" id="address" rows='5' placeholder="Input your address here" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="phoneNum">
+                        <b>Phone number:*</b>
+                        <input type="text" name="phoneNum" id="phoneNum" placeholder="Input your phone number here" required>
+                    </div>
+
+                    <b>Date of Birth (DD/MM/YYYY):*</b>
+                    <div class="DoB">
+                        <div class="day">
+                            <input type="number" name="dayDoB" id="dayDoB" placeholder="Day" required>
+                        </div>
+
+                        <div class="month">
+                            <input type="number" name="monthDoB" id="monthDoB" placeholder="Month" required>
+                        </div>
+
+                        <div>
+                            <input type="number" name="yearDoB" id="yearDoB" placeholder="Year" required>
+                        </div>
+                    </div>
+
+                    <div class="gender">
+                        <b>Gender:*</b>
+                            <input type="radio" name="gender" id="male" required> Laki-laki
+                            <input type="radio" name="gender" id="female" required> Perempuan
+                    </div>
+
+                    <b>Preferred payment:*</b>
+                    <div class="preferredPayment">
+                            <input type="radio" name="payment" id="noneyet" value="none" required> None yet decided
+                            <br>
+                            <input type="radio" name="payment" id="ovo" value="ovo" required> OVO
+                            <br>
+                            <input type="radio" name="payment" id="qris" value="qris" required> Other QRIS payment system (GoPay, DANA, Shopee, etc.) 
+                            <br>
+                            <input type="radio" name="payment" id="cc" value="cc" required> Credit card
+                            <br>
+                            <input type="radio" name="payment" id="debit" value="cc" required> Debit card
+                            <br>
+                            <input type="radio" name="payment" id="transfer" value="transfer" required> Bank transfer
+                            <br>
+                    </div>
+                </div>
+
+                <div class="processStep">
+                    <input type="submit" value="Process your reservation">
+                </div>
+            </div>
+        </form>
+
+            <div class= 'addInfo'>
+                <div class="errorMsg">
+                    <textarea name="errorMsg" id="errorMonth" cols="10" rows="2">Please input month information by number in 'MM' format, from '01' to '12'.</textarea>
+                    <textarea name="errorMsg" id="errorDay" cols="10" rows="2">Please input day information by number in 'DD' format, from '01' to '31'.</textarea>
+                    <textarea name="errorMsg" id="errorPhone" cols="10" rows="2">Phone number must be nine to fifteen numbers.</textarea>
+                    <textarea name="errorMsg" id="errorMinusQty" cols="10" rows="2">Quantity are not allowed to be minus.</textarea>
+                    <textarea name="errorMsg" id="errorZeroQty" cols="10" rows="2">Quantity are not allowed to be zero.</textarea>
+                    <textarea name="errorMsg" id="errorAddress" cols="10" rows="2">Address sent are too short. It must be more than ten characters.</textarea>
+                </div>
+
+                <div class="asterisk">
+                    <p>Field with '*' (asterisk) sign must be filled.</p>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <h2>Copyright &copy; 2021 YBIKE</h2>
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <a href="">
+                    <img src="assets/facebook.png" alt="facobook">
+                </a>
+                <a href="">
+                    <img src="assets/instagram.png" alt="instagram">
+                </a>
+                <a href="">
+                    <img src="assets/twitter.png" alt="twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
